@@ -1,0 +1,485 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{box-sizing: border-box;}
+
+body {
+    margin:0 auto;
+    padding:0;
+}
+
+
+
+
+/* M-Navigation */
+
+.m-navigation {
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100000;
+}
+
+.m-navigation-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.m-navigation-content a img{
+    height: 40px;
+}
+
+#m-menu{
+    width: 20px;
+    color: white;
+}
+
+.openbtn {
+    background: none;
+    border-style: none;
+    font-size: 30px;
+    padding:0;
+}
+
+/* Navigation */
+
+.navigation {
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 100px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10000;
+    transition: 0.2s;
+}
+
+.navigation-content {
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-content a{
+    display: inline-block;
+}
+
+.navigation-content a img{
+    height: 50px;
+}
+
+#menu-1 {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-1 div a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+/* #logo-head {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    left: 40%;
+}
+
+#logo-head img {
+    width: 100%;
+} */
+
+/* #menu-1 {
+    display:none;   
+} */
+
+/* 
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  } */
+  
+
+
+
+/* Main */
+.main {
+    margin:0 auto;
+    padding: 0;
+    width:100%;
+}
+
+/* Main Section-1 */
+.section-1 {
+    margin:0 auto;
+    width: 100%;
+}
+
+.section-1-in {
+    position: relative;
+}
+.section-1-in img{
+    width:100%;
+    height: 350px;
+    object-fit:cover;
+}
+
+.section-1-text {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 30%;
+    left: 6%;
+}
+
+.section-1-text h1{
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    color: black;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.section-1-in button {
+    display: none;
+}
+
+/* Main Section-1-1 */
+
+.section-1-1 {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.section-1-1 h3 {
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.section-1-1-content {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-1-content div img{
+    width: 100px;
+    height: auto;
+}
+
+/* Main Section-2 */
+
+.section-2 {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color: #525151;
+    width: 100%;
+}
+
+.section-2 h1 {
+    padding:10vh 0 ;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.section-2-in {
+    padding: 6vh 2vw 4vh 1vw;
+}
+
+.section-2-in {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+.section-2-tile {  
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:"ikon" 
+                        "text";
+    grid-row-gap: 50px;
+    justify-items: center;
+                        
+}
+
+.section-2-ikon{
+    width:100px;
+    height:100px;
+    grid-area: ikon;
+}
+
+.section-2-ikon img{
+    width:100%;
+    object-fit: cover;
+}
+
+
+.section-2-text {
+    grid-area: text;
+    text-align: center;
+    
+}
+
+.section-2-text h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+.section-2-text p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+}
+
+/* Main Section-3 */
+
+/* Footer */
+footer {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    background: #525151;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.footer-content h3{
+    padding: 2vh 0;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+
+}
+
+.socmed a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:900px) {
+    
+    #mySidenav {
+        display:none;
+    }
+  
+    .section-1-in img{
+        width:100%;
+        height: auto;
+        object-fit:cover;
+    }
+
+    .section-1-in button {
+        display: block;
+        position: absolute;
+        top: 60%;
+        left:6%;
+        border: none;
+        padding: 10px;
+        box-shadow: 2px 2px 2px gray;
+        background: gold;
+        font-family: 'Raleway',sans-serif;
+        font-size: 2rem;
+        color: navy;
+        font-weight: 800;
+    } 
+
+    .section-1-text h1{
+        display: block;
+    }
+
+    .section-2-in {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+        grid-gap: 1rem;
+        width: 100%;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+}
+
+
+@media screen and (min-width:770px) and (max-width:1199px) {}
+
+@media screen and (min-width:1200px){
+    .m-navigation {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .section-1-in {
+        width: 100%;
+    }
+
+}
